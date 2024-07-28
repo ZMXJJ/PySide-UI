@@ -2,7 +2,6 @@ import icons
 from components.page_homepage import ExampleHomepage
 from components.page_option_cards import ExampleOptionCards
 from components.page_widgets import ExampleWidgets
-
 import siui
 from siui.core.globals import SiGlobal
 from siui.templates.application import SiliconApplication
@@ -10,12 +9,11 @@ from siui.templates.application import SiliconApplication
 # 载入图标
 siui.core.globals.SiGlobal.siui.loadIcons(icons.IconDictionary(color="#FFFFFF").icons)
 
-
 class MySiliconApp(SiliconApplication):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.setMinimumSize(1024, 380)
+        self.setMinimumSize(1200, 400)
         self.init_my_app_ui()
 
     def init_my_app_ui(self):
